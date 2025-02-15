@@ -14,6 +14,7 @@ This analysis aims to explore flight path data using K-Means clustering. By segm
   - `mph` (Speed - normalized)
 
 ## **3. K-Means Clustering Analysis**
+- ![image](https://github.com/user-attachments/assets/329e3222-b88d-403e-b436-24a8ff34be69)
 - **Optimal Number of Clusters (k):** The Elbow Method was used to determine that `k=4` is the best choice for segmenting flight paths.
 - **Cluster Assignments:**
   - Each flight was assigned to one of four clusters based on spatial and altitude characteristics.
@@ -28,26 +29,32 @@ This analysis aims to explore flight path data using K-Means clustering. By segm
 
 ## **4. Cluster Visualizations**
 ### **Flight Path Distribution**
+- ![image](https://github.com/user-attachments/assets/fb5f32c6-cbdf-4d3a-a9b1-6c7d72a0a87d)
 - **2D Scatter Plot:** Shows that flight paths are well-separated based on longitude and latitude.
+- ![image](https://github.com/user-attachments/assets/bcac25e9-8a10-46cc-a907-b70b3a6a813c)
 - **3D Scatter Plot:** Highlights altitude variations among clusters, indicating different flight categories.
 
 ### **Altitude vs. Speed by Cluster**
 - **Observations:**
+  - ![image](https://github.com/user-attachments/assets/5d93b9ab-6f6c-4181-9689-6b43bd1013f7)
   - Low-altitude flights tend to have lower speeds.
   - High-altitude flights maintain consistent cruising speeds.
   - Some overlap exists, possibly due to mixed air traffic in certain areas.
 
 ### **Cluster Density Analysis**
+- ![image](https://github.com/user-attachments/assets/8bc3066d-8f38-411a-a326-c9a8ea523b24)
 - **Cluster 1 (low altitude, low speed) has the highest number of flights**, followed by Cluster 0.
 - Clusters 2 and 3 have fewer flights, suggesting these could be specialized routes (e.g., military, private charters).
 
 ## **5. Time-Based Flight Distribution**
 - **Hourly Flight Activity:**
+  - ![image](https://github.com/user-attachments/assets/4b4d5121-4e7a-4017-89dc-d7ea540b43fa)
   - Peak flight hours occur between **8 AM - 8 PM**, likely corresponding to commercial air traffic.
   - **Clusters 2 & 3 (high-altitude flights) dominate peak hours**, aligning with major flight schedules.
   - **Cluster 1 (low-altitude flights) shows more activity at night**, potentially indicating private or military flights.
 
 ## **6. Anomaly Detection**
+- ![image](https://github.com/user-attachments/assets/6d422595-89ce-470e-9874-634db5dffb5d)
 - **Outliers detected based on distance from cluster centers.**
 - **Potential causes:**
   - Emergency flight diversions
